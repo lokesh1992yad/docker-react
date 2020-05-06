@@ -7,4 +7,4 @@ RUN npm run build
 
 FROM nginx
 EXPOSE 80
-COPY --from=O /app/build /usr/share/nginx/html
+COPY --from=o /app/build /usr/share/nginx/html
